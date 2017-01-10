@@ -1,1 +1,40 @@
 /* from header.sass */
+.page-header
+  padding: 39px 215px 0 215px
+  overflow: hidden
+  background-color: transparent
+  position: relative
+  &__logo
+    text-decoration: none
+    color: #fff
+    text-transform: uppercase
+    font-family: "MontserratBold"
+    font-size: em(14)
+    float: left
+  &__menu
+    float: right
+    margin-top: -5px
+
+.top-menu
+  &__item
+    display: inline-block
+    text-decoration: none
+    color: #fff
+    text-transform: uppercase
+    font-family: "MontserratBold"
+    font-size: em(11)
+    position: relative
+    &:not(:last-child)
+      margin-right: 35px
+    &:last-child
+      font-size: em(18)
+    &:last-child:hover::before
+      display: none
+    &:hover::before
+      position: absolute
+      content: ""
+      height: 3px
+      width: 100%
+      background-color: #fff
+      left: 0
+      top: -42px

@@ -1,1 +1,285 @@
 /* from content.sass */
+.page-slider
+  background: #000 url(../img/people-compressor.png) no-repeat 0 0
+  margin-top: -63px
+  text-align: center
+  padding: 214px 0 46px 0
+
+.slide
+  &__heading
+    text-transform: capitalize
+    font-size: em(60)
+  &__description
+    opacity: 0.6
+    font-size: em(18)
+    font-family: "MontserratLight"
+    max-width: 778px
+    margin: 4px auto 0
+  &__link
+    display: inline-block
+    text-decoration: none
+    color: #feffff
+    font-size: em(12)
+    padding: 15px 59px
+    text-transform: uppercase
+    background-color: #32be60
+    border-radius: 25px
+    margin: 71px 0 120px
+  .goal
+    display: inline-block
+    max-width: 309px
+    text-align: left
+    &:not(:last-child)
+      margin-right: 121px
+    &__heading
+      text-transform: uppercase
+      font-size: em(14)
+      color: #feffff
+    &__description
+      opacity: 0.6
+      font-size: em(12)
+      font-family: "MontserratLight"
+      margin-top: 20px
+
+.campaigns
+  text-align: center
+  padding: 109px 0 120px 0
+  &__heading
+    font-size: em(28)
+    color: #150c31
+    text-transform: capitalize
+    margin-bottom: 8px
+  &__underheading
+    font-size: em(14)
+    font-family: "MontserratLight"
+    color: #807996
+    max-width: 716px
+    display: inline-block
+    margin-bottom: 22px
+  &__dots
+    margin-bottom: 80px
+    .dot
+      display: inline-block
+      width: 8px
+      height: 8px
+      background-color: #150c31
+      opacity: 0.3
+      border-radius: 50%
+      &:not(:last-child)
+        margin-right: 17px
+  &__item
+    margin-right: 30px
+  &__item:nth-child(7)
+    margin-right: 0
+  &__link
+    border: 2px solid #150c31
+    border-radius: 50px
+    text-decoration: none
+    text-transform: uppercase
+    font-size: em(12)
+    color: #150c31
+    padding: 14px 51px
+    display: inline-block
+    margin-top: 70px
+
+.campaigns-item
+  display: inline-block
+  max-width: 270px
+  &__logo
+    width: 270px
+    height: 200px
+    background-color: #ccc
+    margin-bottom: 24px
+  &__logo_logo-1
+    background: url(../img/campaign-1.png) no-repeat 0 0
+  &__logo_logo-2
+    background: url(../img/campaign-2.png) no-repeat 0 0
+  &__logo_logo-3
+    background: url(../img/campaign-3.png) no-repeat 0 0
+  &__logo_logo-4
+    background: url(../img/campaign-4.png) no-repeat 0 0
+  &__title
+    color: #150c31
+    text-align: left
+    margin-bottom: 3px
+  &__description
+    font-family: "MontserratLight"
+    color: #807996
+    font-size: em(12)
+    text-align: left
+    margin-bottom: 20px
+  &__location
+    text-align: left
+    font-size: em(12)
+    text-transform: capitalize
+    color: #150c31
+    padding: 0 0 0 15px
+    position: relative
+    margin-bottom: 10px
+    &::before
+      position: absolute
+      content: ""
+      width: 10px
+      height: 16px
+      background: url(../img/location-icon.png) no-repeat 0 0
+      left: 0
+      top: 2px
+
+.progress
+  text-align: left
+  &__bar
+    width: 100%
+    height: 10px
+    background-color: rgba(#170a38, 0.16)
+    margin-bottom: 10px
+    position: relative
+  &__bar_bar-1::before,
+  &__bar_bar-2::before,
+  &__bar_bar-3::before,
+  &__bar_bar-4::before
+      position: absolute
+      content: ""
+      height: 10px
+      background-color: #32be60
+      top: 0
+      left: 0
+      opacity: 1
+  &__bar_bar-1::before
+    width: 40%
+  &__bar_bar-2::before
+    width: 76%
+  &__bar_bar-3::before
+    width: 6%
+  &__bar_bar-4::before
+    width: 100%
+  &__funded,
+  &__pledged,
+  &__days-to-go
+    display: inline-block
+    text-align: left
+    font-size: em(14)
+    color: #150c31
+    margin-right: 20px
+    letter-spacing: -1px
+    span
+      display: block
+      font-size: em(12)
+      color: #807996
+      letter-spacing: 0
+
+.story
+  background: #000 url(../img/girl-compressor.png) no-repeat 0 0
+  padding: 150px 230px 181px 0
+  overflow: hidden
+  &__wrapper
+    float: right
+    max-width: 595px
+  &__heading
+    font-size: em(28)
+    text-transform: capitalize
+  &__text
+    margin-top: 15px
+    font-size: em(14)
+    font-family: "MontserratLight"
+
+.help
+  text-align: center
+  padding: 109px 0 37px 0
+  &__heading
+    font-size: em(28)
+    color: #150c31
+    text-transform: capitalize
+    margin-bottom: 8px
+  &__underheading
+    font-size: em(14)
+    font-family: "MontserratLight"
+    color: #807996
+    max-width: 716px
+    display: inline-block
+    margin-bottom: 22px
+  &__dots
+    margin-bottom: 80px
+    .dot
+      display: inline-block
+      width: 8px
+      height: 8px
+      background-color: #150c31
+      opacity: 0.3
+      border-radius: 50%
+      &:not(:last-child)
+        margin-right: 17px
+
+.help-list
+  max-width: 1600px
+  .item
+    display: inline-block
+    max-width: 390px
+    text-align: left
+    vertical-align: top
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      width: 80px
+      height: 80px
+      border: 2px solid #ece8f1
+      border-radius: 50%
+      left: -100px
+      top: -15px
+      background: url(../img/help-icons.png) no-repeat 20px 20px
+    &:nth-child(2)::before
+      background-position: -630px 20px
+    &:nth-child(3)::before
+      background-position: 20px -127px
+    &:nth-child(4)::before
+      background-position: -630px -127px
+    &:nth-child(2n-1)
+      margin: 0 261px 75px 59px
+    &__title
+      font-size: em(18)
+      color: #150c31
+      margin-bottom: 10px
+      &::first-letter
+        text-transform: uppercase
+    &__description
+      font-family: "MontserratLight"
+      font-size: em(14)
+      color: #807996
+
+.shop
+  background-color: #f3f3f3
+  text-align: center
+  &__image
+    background: url(../img/t-shirt.png) no-repeat 0 -30px
+    vertical-align: top
+    width: 450px
+    height: 480px
+    display: inline-block
+
+.shop-container
+  margin-top: 128px
+  margin-left: 95px
+  text-align: left
+  max-width: 595px
+  display: inline-block
+  vertical-align: top
+  &__heading
+    font-size: em(28)
+    color: #150c31
+    margin-bottom: 12px
+    &::first-letter
+      text-transform: uppercase
+  &__description
+    color: #807996
+    font-size: em(14)
+    font-family: "MontserratLight"
+    margin-bottom: 34px
+  &__link
+    border-radius: 25px
+    background-color: #150c31
+    text-decoration: none
+    color: #feffff
+    font-size: em(12)
+    text-transform: uppercase
+    padding: 14px 66px
+    display: inline-block

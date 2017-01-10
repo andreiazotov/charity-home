@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='Your page description')
     meta(name='author', content='Your page author')
-    title Your Title
+    title Charity Home
     link(href="css/styles.css", rel="stylesheet")
     link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
     <![if lt IE 9]>
@@ -28,23 +28,24 @@ html(lang='en')
       section.page-slider
         .page-slider__slide.slide
           h2.slide__heading helping people
-          p.slide__descritpion Lorem ipsum dolor sit amet, consectetuer adipiscing
+          p.slide__description Lorem ipsum dolor sit amet, consectetuer adipiscing
             | elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
             | magna aliquam erat volutpat.
           a(href="#").slide__link get started
+          .divider
           .slide__goal.goal
             h4.goal__heading save lives
-            p.goal__descritpion Lorem ipsum dolor sit amet, consectetuer adipiscing
+            p.goal__description Lorem ipsum dolor sit amet, consectetuer adipiscing
               | elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               | magna aliquam.
           .slide__goal.goal
             h4.goal__heading give an educaction
-            p.goal__descritpion Lorem ipsum dolor sit amet, consectetuer adipiscing
+            p.goal__description Lorem ipsum dolor sit amet, consectetuer adipiscing
               | elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               | magna aliquam.
           .slide__goal.goal
             h4.goal__heading care about health
-            p.goal__descritpion Lorem ipsum dolor sit amet, consectetuer adipiscing
+            p.goal__description Lorem ipsum dolor sit amet, consectetuer adipiscing
               | elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               | magna aliquam.
       section.campaigns
@@ -60,11 +61,11 @@ html(lang='en')
           .campaigns-item__logo.campaigns-item__logo_logo-1
           h4.campaigns-item__title Urgent rebuilding - 2500 Chennai flood survivors
           p.campaigns-item__description Lorem ipsum dolor sit amet, consectetuer
-            | adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            |&nbsp adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
             | laoreet dolore...
           p.campaigns-item__location india
           .campaigns-item__progress.progress
-            .progress__bar
+            .progress__bar.progress__bar_bar-1
             p.progress__funded
               | 40%
               span funded
@@ -78,11 +79,11 @@ html(lang='en')
           .campaigns-item__logo.campaigns-item__logo_logo-2
           h4.campaigns-item__title Internet Opens New World of Learning Opportunities
           p.campaigns-item__description Lorem ipsum dolor sit amet, consectetuer
-            | adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            |&nbsp adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
             | laoreet dolore...
           p.campaigns-item__location sierra leone
           .campaigns-item__progress.progress
-            .progress__bar
+            .progress__bar.progress__bar_bar-2
             p.progress__funded
               | 76%
               span funded
@@ -96,11 +97,11 @@ html(lang='en')
           .campaigns-item__logo.campaigns-item__logo_logo-3
           h4.campaigns-item__title Support 8 youth to succeed in school and society
           p.campaigns-item__description Lorem ipsum dolor sit amet, consectetuer
-            | adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            |&nbsp adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
             | laoreet dolore...
           p.campaigns-item__location guatemala
           .campaigns-item__progress.progress
-            .progress__bar
+            .progress__bar.progress__bar_bar-3
             p.progress__funded
               | 6%
               span funded
@@ -114,11 +115,11 @@ html(lang='en')
           .campaigns-item__logo.campaigns-item__logo_logo-4
           h4.campaigns-item__title Use Soap to Empower 60 Rape Survivors in Mali
           p.campaigns-item__description Lorem ipsum dolor sit amet, consectetuer
-            | adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            |&nbsp adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
             | laoreet dolore...
           p.campaigns-item__location india
           .campaigns-item__progress.progress
-            .progress__bar
+            .progress__bar.progress__bar_bar-4
             p.progress__funded
               | 3903%
               span funded
@@ -128,17 +129,19 @@ html(lang='en')
             p.progress__days-to-go
               | 21
               span days to go
+        .divider
         a(href="#").campaigns__link view all campaigns
       section.story
-        h3.story__heading our story
-        p.story__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-          | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-          | aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-          | exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-          | commodo consequat. Duis autem vel eum iriure dolor in hendrerit.
+        .story__wrapper
+          h3.story__heading our story
+          p.story__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+            | aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+            | exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            | commodo consequat. Duis autem vel eum iriure dolor in hendrerit.
       section.help
         h3.help__heading How can you help
-        p.help__description Lorem ipsum dolor sit amet, consectetuer adipiscing
+        p.help__underheading Lorem ipsum dolor sit amet, consectetuer adipiscing
           | elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
           | aliquam erat volutpat. Ut wisi enim ad minim veniam.
         .help__dots
