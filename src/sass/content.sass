@@ -85,11 +85,22 @@
 .campaigns-item
   display: inline-block
   max-width: 270px
+  cursor: pointer
   &__logo
     width: 270px
     height: 200px
     background-color: #ccc
     margin-bottom: 24px
+    position: relative
+  &__logo:hover::before
+    position: absolute
+    content: ""
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background: #cf1b41 url(../img/search-icon.png) no-repeat 50% 50%
+    left: 105px
+    top: 70px
   &__logo_logo-1
     background: url(../img/campaign-1.png) no-repeat 0 0
   &__logo_logo-2
@@ -283,3 +294,63 @@
     text-transform: uppercase
     padding: 14px 66px
     display: inline-block
+
+.donors
+  text-align: center
+  padding: 109px 0 113px 0
+  &__heading
+    font-size: em(28)
+    color: #150c31
+    text-transform: capitalize
+    margin-bottom: 8px
+  &__underheading
+    font-size: em(14)
+    font-family: "MontserratLight"
+    color: #807996
+    max-width: 716px
+    display: inline-block
+    margin-bottom: 22px
+  &__dots
+    margin-bottom: 80px
+    .dot
+      display: inline-block
+      width: 8px
+      height: 8px
+      background-color: #150c31
+      opacity: 0.3
+      border-radius: 50%
+      &:not(:last-child)
+        margin-right: 17px
+  &__item
+    display: inline-block
+    &:not(:last-child)
+      margin-right: 132px
+
+.donor
+  &__photo
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background-color: #150c31
+    display: inline-block
+    margin-bottom: 5px
+  &__photo_donor-1
+    background: url(../img/donors.png) no-repeat 0 0
+  &__photo_donor-2
+    background: url(../img/donors.png) no-repeat -240px 0
+  &__photo_donor-3
+    background: url(../img/donors.png) no-repeat -480px 0
+  &__photo_donor-4
+    background: url(../img/donors.png) no-repeat -720px 0
+  &__photo_donor-5
+    background: url(../img/donors.png) no-repeat -960px 0
+  &__donation
+    font-size: em(18)
+    color: #150c31
+    letter-spacing: -1px
+  &__name
+    font-family: "MontserratLight"
+    font-size: em(14)
+    color: #807996
+    text-transform: capitalize
+    letter-spacing: 0
