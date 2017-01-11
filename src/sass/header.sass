@@ -11,6 +11,9 @@
     font-family: "MontserratBold"
     font-size: em(14)
     float: left
+    transition: 0.4s
+    &:hover
+      color: #32be60
   &__menu
     float: right
     margin-top: -5px
@@ -31,6 +34,7 @@
     &:last-child:hover::before
       display: none
     &:hover::before
+      opacity: 1
       position: absolute
       content: ""
       height: 3px

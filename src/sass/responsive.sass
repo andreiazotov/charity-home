@@ -1,4 +1,154 @@
 /* from responsive.sass */
-@media screen and (max-width: 1920px)
-  .page-wrapper
-    padding: 0
+@media screen and (max-width: 1200px)
+  .page-header
+    padding: 39px 80px 0
+
+  .slide
+    .goal
+      &:not(:last-child)
+        margin-right: 20px
+
+  .campaigns
+    &__item
+      margin-bottom: 40px
+    &__item:nth-child(2n)
+      margin-right: 195px
+    &__item:nth-child(2n-1)
+      margin-right: 0
+    &__link
+      margin-top: 30px
+
+  .help-list
+    .item
+      max-width: 250px
+      &:nth-child(2n-1)
+        margin: 0 240px 75px 85px
+
+  .shop-container
+    margin-left: 30px
+    max-width: 400px
+
+  .donors
+    &__item
+      &:not(:last-child)
+        margin-right: 80px
+
+  .page-footer
+    padding: 25px 50px
+
+
+@media screen and (max-width: 1000px)
+  .page-header
+    padding: 39px 40px 0
+
+  .page-slider
+    padding: 110px 0 46px 0
+
+  .slide
+    &__heading
+      font-size: 2.75em
+    &__link
+      margin-bottom: 17px
+    .goal
+      display: block
+      text-align: center
+      max-width: 100%
+      margin: 40px 0 0 0
+      &:not(:last-child)
+        margin-right: 0
+      &__description
+        font-size: em(14)
+        margin-top: 5px
+
+@media screen and (max-width: 900px)
+  .slide
+    .goal
+      margin: 20px 0 0 0
+      &__heading
+        font-size: em(24)
+      &__description
+        display: none
+
+  .story
+    padding: 150px 20px 181px 20px
+    &__wrapper
+      float: none
+      margin: 0 auto
+
+  .help-list
+    margin-bottom: 50px
+    .item
+      display: block
+      max-width: 80%
+      margin: 120px auto 0
+      text-align: center
+      &:nth-child(2n-1)
+        margin: 120px auto 0
+      &::before
+        left: 43%
+        top: -90px
+
+  .shop
+    padding: 70px 0
+    &__image
+      display: none
+  .shop-container
+    margin-left: 0
+    margin-top: 0
+
+  .donors
+    &__item
+      &:not(:last-child)
+        margin-right: 40px
+
+
+@media screen and (max-width: 750px)
+  .top-menu
+    display: none
+
+  .campaigns
+    &__item
+      display: block
+      margin: 0 auto
+      margin-bottom: 50px
+    &__item:nth-child(2n)
+      margin-right: auto
+    &__item:nth-child(2n-1)
+      margin-right: auto
+    &__link
+      margin-top: 30px
+
+  .story
+    padding: 50px 20px 120px 20px
+
+  .help-list
+    .item
+      &::before
+        display: none
+
+  .shop-container
+    max-width: 90%
+    text-align: center
+
+  .donors
+    &__item
+      margin-top: 20px
+
+  .page-footer
+    padding-left: 0
+    padding-right: 0
+    text-align: center
+    &__copyrights,
+    &__links
+      float: none
+      display: block
+
+@media screen and (max-width: 500px)
+  .donors
+    &__item
+      display: block
+      margin-top: 40px
+      margin-left: auto
+      margin-right: auto
+      &:not(:last-child)
+        margin-right: auto
